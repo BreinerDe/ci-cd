@@ -17,7 +17,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      - name: Run make command
+      - uses: actions/checkout@v3     
+      - name: Setup Python 3.5
+        uses: actions/setup-python@v4.0.0
+        with: 
+          python-version: 3.5
+      - name: install dependecies
+        run: make install
+      - name: lint with pylint
+        run: make lint
+      - name: test with pytest
+        run: make test
+      - name: run hello
         run: make hello
+        
