@@ -133,7 +133,7 @@ XPC_SERVICE_NAME = application.com.microsoft.VSCode.13520242.13520248
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-ConfigAPISubscriptionKey = e53006ecc6cd4658acea595973707072
+ConfigAPISubscriptionKey = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -153,7 +153,7 @@ LC_ALL = C
 # environment
 PLATFORMSHADOW_TIMEOUT = 5000
 # environment
-SessionContextAPISubscriptionKey = e53006ecc6cd4658acea595973707072
+SessionContextAPISubscriptionKey = 
 # automatic
 ^F = $(notdir $^)
 # default
